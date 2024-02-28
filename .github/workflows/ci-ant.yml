@@ -19,9 +19,9 @@ jobs:
         sudo apt-get -qq install junit > /dev/null
     - name: Download freenet.jar
       run: |
-        mkdir -p ../fred/dist
+        mkdir -p ../fred/dist/
         wget https://github.com/hyphanet/fred/releases/download/build01497/freenet.jar -qO ../fred/dist/freenet.jar
-        mkdir lib
+        mkdir lib/
         wget https://repo.spring.io/plugins-release/com/db4o/com.db4o/7.7.67/com.db4o-7.7.67.jar -q O lib/com.db4o-7.7.67.jar
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
