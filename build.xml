@@ -40,7 +40,7 @@
 			<classpath>
 				<pathelement location="${freenet-ext.location}"/>
 				<pathelement location="${freenet-cvs-snapshot.location}"/>
-				<pathelement location="lib/com.db4o-7.7.67.jar"/>
+				<pathelement location="lib/db4o-8.0.276.16149-core-java5.jar"/>
 			</classpath>
 			<include name="**/*.java"/>
 			<exclude name="plugins/XMLLibrarian/Interdex/*" />

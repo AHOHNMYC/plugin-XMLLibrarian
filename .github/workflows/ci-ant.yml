@@ -23,7 +23,7 @@ jobs:
         mkdir -p ../fred/dist/
         wget https://github.com/hyphanet/fred/releases/download/build01497/freenet.jar -qO ../fred/dist/freenet.jar
         mkdir lib/
-        wget https://repo.spring.io/plugins-release/com/db4o/com.db4o/7.7.67/com.db4o-7.7.67.jar -q O lib/com.db4o-7.7.67.jar
+        wget https://github.com/Kampbell/db4o-8.0/raw/bf02ee06e76b75753a00131b871ae3821f24e370/lib/db4o-8.0.276.16149-core-java5.jar -q O lib/db4o-8.0.276.16149-core-java5.jar
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
     - name: Upload XMLLibrarian
