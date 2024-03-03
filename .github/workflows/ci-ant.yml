@@ -20,9 +20,13 @@ jobs:
     - name: Download freenet.jar
       run: |
         sudo chown -R runner ../..
+        echo 1
         mkdir -p ../fred/dist/
+        echo 2
         wget https://github.com/hyphanet/fred/releases/download/build01497/freenet.jar -qO ../fred/dist/freenet.jar
+        echo 3
         mkdir lib/
+        echo 4
         wget https://github.com/Kampbell/db4o-8.0/raw/bf02ee06e76b75753a00131b871ae3821f24e370/lib/db4o-8.0.276.16149-core-java5.jar -q O lib/db4o-8.0.276.16149-core-java5.jar
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
